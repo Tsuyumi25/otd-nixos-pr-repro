@@ -116,17 +116,6 @@ user:<username>:rw-
 The tags alone do not prove that the ACL was applied, so include both
 `udevadm info` and `getfacl` output when reporting a result.
 
-## Build without NixOS integration
-
-The package can also be built directly:
-
-```console
-$ nix build github:Tsuyumi25/otd-nixos-pr-repro
-```
-
-This only builds the package. Importing `nixosModules.default` is what installs
-the udev rules and configures the OpenTabletDriver user service.
-
 ## Pinned revisions
 
 - OpenTabletDriver: `3339730d0e469978d29324bf94acf242ceec74a1`
